@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.addFiles('harrison:papa-parse.js', ['client']);
+  api.addFiles('harrison:papa-parse.js', 'client');
 });
 
 Package.onTest(function(api) {
