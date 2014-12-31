@@ -8,11 +8,11 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom("METEOR@0.9.3");
   api.use("jquery");
-  api.addFiles('papa-parse.js', ['client']);
+  api.addFiles('papa-parse.js', 'client');
 });
 
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('harrison:papa-parse');
-  api.addFiles('papa-parse-tests.js', ['client']);
+  api.addFiles('papa-parse-tests.js', 'client');
 });
