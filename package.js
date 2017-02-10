@@ -10,7 +10,7 @@ Package.onUse(function(api) {
   api.use("jquery");
   api.addFiles('papa-parse.js', 'client');
   api.addFiles('baby-parse.js', 'server');
-  api.export('Papa', 'server');
+  api.export('Papa', ['server', 'client']);
 });
 
 Package.onTest(function(api) {
@@ -18,5 +18,5 @@ Package.onTest(function(api) {
   api.use('harrison:papa-parse');
   api.addFiles('papa-parse-tests.js', 'client');
   api.addFiles('baby-parse-tests.js', 'server');
-  api.export('Papa', 'server');
+  api.export('Papa',  ['server', 'client']);
 });
