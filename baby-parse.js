@@ -38,8 +38,6 @@
     Baby.Parser = Parser;               // For testing/dev only
     Baby.ParserHandle = ParserHandle;   // For testing/dev only
 
-    var fs = fs || require('fs')
-
     function ParseFiles(_input, _config)
     {
         if (Array.isArray(_input)) {
@@ -81,6 +79,8 @@
         var config = copyAndValidateConfig(_config);
         var ph = new ParserHandle(config);
         var results = ph.parse(_input);
+        if (isFunction(config.complete))
+            config.complete(results);
         return results;
     }
 
