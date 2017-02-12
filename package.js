@@ -2,7 +2,7 @@ Package.describe({
   name: 'harrison:papa-parse',
   summary: 'A powerful, in-browser CSV parser for big boys and girls',
   git: 'https://github.com/harrisonhunter/papa-parse-meteor.git',
-  version: '1.1.1'
+  version: '1.1.2'
 });
 
 Package.onUse(function(api) {
