@@ -1,6 +1,9 @@
 papa-parse-meteor
 =================
 
+Note: This package is no longer necessary:
+Note: If you are using a recent version of Meteor or imports, you no longer need this package. You can install the papaparse npm package directly and import it. In the root of your meteor project run `meteor npm install --save papaparse`. Then, you can import with `import Papa from 'papaparse';` or `import * as Papa from 'papaparse';`.
+
 Papa Parse packaged for Meteor
 
 The excellent Papa Parse package packaged for meteor. Use the Papa command as per examples on http://papaparse.com/
